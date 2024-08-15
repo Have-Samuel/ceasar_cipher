@@ -34,11 +34,11 @@ def cipher(str, shift)
   ciphier_array = []
 
   # Convert string to downcase and array to strings
-  str_array = string.downcase.chars
+  str_array = str.downcase.chars
 
   # Create array of srting ordinal values
   for i in str_array
-    ord_array.push(i, i.ord)
+    ord_array.push(i.ord)
   end
 
   # first push i not equal to a-z to final product, no mutation
@@ -50,9 +50,9 @@ def cipher(str, shift)
     elsif i + shift > 122
       x = i + shift
       y = x - 122
-      ciphier_ord_array.push(i - shift + 26)
+      ciphier_ord_array.push(96 + y)
     else
-      ciphier_ord_array.push(i - shift)
+      ciphier_ord_array.push(i + shift)
     end
   end
 
@@ -62,5 +62,12 @@ def cipher(str, shift)
   end
 
   # Convert array to string
-  ciphier_array.join('')
+  puts "Your string is #{str}"
+  puts "Which gets converted into an array: #{str_array}"
+  puts "Which is turned into ordinal values: #{ord_array}"
+  puts "and then shifted based on your number #{ciphier_array}"
+  puts "and finally turned back into a new cipher string: #{ciphier_array}"
+  puts "the final encrypted message is #{ciphier_array.join('')}"
 end
+
+cipher("What a string!", 5)
