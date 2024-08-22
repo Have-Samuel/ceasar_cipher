@@ -1,5 +1,5 @@
 # Ceasar cipher Challenge
-
+# This Challenge is to create a method that takes a string and a number as arguments and then shifts each letter in the string by the number.
 def cipher(str, shift)
   # Looping arrays
   ord_array = []
