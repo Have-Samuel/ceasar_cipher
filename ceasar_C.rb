@@ -1,29 +1,4 @@
-# # str = "What a string!"
-# # str.to_i
-
-# # (position_index + shift) % 26, will be formula we will use to shift the letters
-
-# def ceasar_cipher(str, shift)
-#   # empty array to store the shifted letters
-#   shifted_letters = []
-#   # split the string into an array of characters
-#   str.split("").each do |letter|
-#     # we will use ASCII values to shift the letters
-#     # check if the letter is a capital letter
-#     # What does the .ord method do? It returns the ASCII value of the character it is called on.
-#     if letter.ord >= 65 && letter.ord <= 90
-#       shifted_letter = (letter.ord + shift - 65) % 26 + 65
-#       shifted_letters.push(shifted_letter.chr)
-#     # check if the letter is a lower case letter
-#     elsif letter.ord >= 97 && letter.ord <= 122
-#       shifted_letter = (letter.ord + shift - 97) % 26 + 97
-#       shifted_letters.push(shifted_letter.chr)
-#     # if the letter is not a letter, push it to the array
-#     else
-#       shifted_letters.push(letter)
-#     end
-#   end
-# end
+# Ceasar cipher Challenge
 
 def cipher(str, shift)
   # Looping arrays
