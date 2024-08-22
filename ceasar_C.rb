@@ -44,16 +44,16 @@ def cipher(str, shift)
 
   # Convert ordinal values to characters
   for i in ciphier_ord_array
-    ciphier_array.push(i.chr)
+    ciphier_array.push(i.chr) # What does CHR do? It returns the ASCII character of the number. eg 119 = w, 104 = h, 97 = a, 116 = t, 32 = space, 97 = a, 32 = space, 115 = s, 116 = t, 114 = r, 105 = i, 110 = n, 103 = g, 33 = !
   end
 
   # Convert array to string
-  puts "Your string is #{str}"
-  puts "Which gets converted into an array: #{str_array}"
-  puts "Which is turned into ordinal values: #{ord_array}"
-  puts "and then shifted based on your number #{ciphier_array}"
-  puts "and finally turned back into a new cipher string: #{ciphier_array}"
-  puts "the final encrypted message is #{ciphier_array.join('')}"
+  puts "Your string is #{str} => str"
+  puts "Which gets converted into an array: #{str_array} => str_array"
+  puts "Which is turned into ordinal values: #{ord_array} => ord_array"
+  puts "and then shifted based on your number #{ciphier_array} => ciphier_array"
+  puts "and finally turned back into a new cipher string: #{ciphier_array} => ciphier_array"
+  puts "the final encrypted message is #{ciphier_array.join('')} => 6"
 end
 
 cipher("What a string!", 5)
