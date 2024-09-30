@@ -20,6 +20,7 @@ function rot13(encodedString) {
       }
   }
   }
+  # return the decoded array as a string
   return decodedArr.join(''); # return the decoded array as a string
 }
 
