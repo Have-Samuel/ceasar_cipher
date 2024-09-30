@@ -5,7 +5,7 @@ function rot13(encodedString) {
   let alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'];
   # Loop through the codeArr
   for (let i = 0; i < codeArr.length; i++) {
-  # If current value is not a letter, push it to the decodedArr
+      # If current value is not a letter, push it to the decodedArr
   if (alphabet.indecxOf(codeArr[i]) === -1) {
     # If the current value is not a letter, push it to the decodedArr
     # This is to account for spaces and punctuation
@@ -22,3 +22,4 @@ function rot13(encodedString) {
   }
   return decodedArr.join(''); # return the decoded array as a string
 }
+
