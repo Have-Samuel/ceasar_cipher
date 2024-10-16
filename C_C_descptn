@@ -1,4 +1,12 @@
 ### Ceasar Ciphar
 
+- In cryptography, a Caesar cipher, also known as Caesar’s cipher, the shift cipher, Caesar’s code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
+
+## Quick Tips
+
+- You will need to remember how to convert a string into a number.
+- Don’t forget to wrap from z to a.
+- Don’t forget to keep the same case
+
 - Write a function which takes a ROT13 encoded string as input and returns a decoded string. All letters will be uppercase. Do not transform any non-alphabetic character (i.e, spaces, punctuation), but do pass them on.
 - The provided code transforms the input into an array for you. codeArr. Placethe decoded values into the decodedArr array where the provided code will transform it back into a string.
