@@ -23,4 +23,4 @@ end
 
 result # returns the resulting string after shifting each character.
 end
-puts caesar_cipher('Abz 4543 c', 3) # calls the caesar_cipher method with the string 'Abz 4543 c' and a shift value of 3 and prints the resulting string. The output will be 'DeC 7876 f'.
+puts caesar_cipher('Ab 4543 c', 3) # calls the caesar_cipher method with the string 'Abz 4543 c' and a shift value of 3 and prints the resulting string. The output will be 'DeC 7876 f'.
