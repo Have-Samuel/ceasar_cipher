@@ -6,7 +6,7 @@ index_of_character = nil # is a variable that will store the index of the charac
 return character unless alphabet.include?(character.downcase) # is a guard clause that returns the character if it is not included in the alphabet array.
 
 alphabet.each_with_index do |char, index| # iterates over the alphabet array and assigns the index of the character in the alphabet array to the index_of_character variable.
-  index_of_character = index if character.downcase == char
+  index_of_character = index if character.downcase == char # checks if the lowercase version of the character matches the current character in the iteration and assigns the index to the index_of_character variable if there is a match.
 end
 
 cipher = alphabet[index_of_character + shift] # calculates the shifted character by adding the shift value to the index of the character in the alphabet array.
