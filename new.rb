@@ -9,7 +9,8 @@ def caesar_cipher_char(character, shift)
   end
 
   cipher = alphabet[index_of_character + shift]
-  cipher.upcase == character ? cipher.upcase : cipher
+  # p cipher, character
+  character.upcase == character ? cipher.upcase : cipher
 end
 
 def caesar_cipher(string, shift)
@@ -22,7 +23,7 @@ def caesar_cipher(string, shift)
   result
 end
 
-puts caesar_cipher('Abz 4543 c', 3)
+puts caesar_cipher('Ab 4543 C', 3)
     
     # new
 # def caesar_cipher_char(character, shift)
