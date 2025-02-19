@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def caesar_cipher_char(character, shift)
   alphabet = ('a'..'z').to_a
   index_of_character = nil
@@ -16,7 +18,7 @@ end
 def caesar_cipher(string, shift)
   result = ''
 
-     string.each_char do |char|
+  string.each_char do |char|
     result += caesar_cipher_char(char, shift)
   end
 
@@ -24,8 +26,8 @@ def caesar_cipher(string, shift)
 end
 
 puts caesar_cipher('Ab 4543 C', 3)
-    
-    # new
+
+# new
 # def caesar_cipher_char(character, shift)
 #   alphabet = ('a'..'z').to_a
 #   index_of_character = nil
